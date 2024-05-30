@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Archivo+Black&family=Great+Vibes&family=Vollkorn:ital,wght@0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 7.1% 15.6%,
+          rgb(22, 160, 133) 0%,
+          rgb(64, 240, 206) 100.3%
+        );
+      }
+      h1 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        text-align: center;
+      }
+      h2 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        text-align: center;
+      }
+      p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        line-height: 25px;
+        padding: 15px;
+        text-align: justify;
+        font-weight: 600;
+      }
+      .top-font {
+        text-align: center;
+      }
+      .row {
+        display: flex;
+      }
+      .column {
+        flex: 33.33%;
+        padding: 15px;
+      }
+      span {
+        color: #7e028f;
+      }
+      img {
+        border: 5px solid white;
+      }
+      button {
+        padding: 15px;
+        color: #7e028f;
+        background-color: azure;
+        border-width: 1px;
+        border-color: #7e028f;
+        border-radius: 25px;
+        font-size: 15px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: bold;
+        margin: 0 auto;
+        display: block;
+      }
+      button:hover {
+        color: azure;
+        background-color: #7e028f;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+        box-shadow: 5px 5px 15px white;
+      }
+      .author {
+        font-family: Apple Chancery, cursive;
+        color: darkmagenta;
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+        font-family: "Acme", sans-serif;
+        font-family: "Great Vibes", cursive;
+        font-family: "Vollkorn", serif;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><strong>Developing a passion for prayer!</strong></h1>
+    <h2>
+      One of the most wonderful mysteries in the universe is that prayer can
+      change everything 🙏
+    </h2>
+    <p class="top-font">
+      <em
+        >The Lord’s passion for prayer is something he wants us to have as well.
+        In one of his parables Jesus taught that we “should always pray and not
+        give up” (see
+        <a href="https://biblia.com/bible/niv/luke/18/1" target="_blank"
+          >Luke 18:1</a
+        >).</em
+      >
+    </p>
+    <hr />
+    <div class="row">
+      <div class="column">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/476/original/prayer1.jpg?1671389175"
+          alt="Pray Continually"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+      <hr />
+      <div class="column">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/482/original/prayer2.jpg?1671389456"
+          alt="Pray Continually"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+      <hr />
+      <div class="column">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/483/original/prayer3.jpg?1671389620"
+          alt="Pray Continually"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+    </div>
+    <hr />
+    <p>
+      Prayer was obviously a high priority for the apostle Paul, who wrote the
+      letter to the Colossians. Some of the most beautiful prayers ever written
+      are found in his letters. Paul’s prayers are magnificent, not only because
+      of their content but also because he was so diligent in prayer. He prayed
+      “continually” for others and always thanked God for them. Perhaps this
+      leads you to consider how important prayer is in your life. Sometimes we
+      think prayer is a gift that some believers have more than ­others.
+      Sometimes people who become known for having a passion for prayer are even
+      called “prayer warriors.” <br /><br />It’s true that some people are
+      simply more interested in prayer than others. But God wants prayer to be a
+      top priority in everyone’s life.
+      <span>God wants us to experience prayer as a delight, not a duty.</span>
+      Perhaps one of the things we should pray about most is prayer itself. If
+      you ask God to help
+      <span>make prayer more of a priority in your life</span>, how do you think
+      he will respond? Of course he will say yes!
+    </p>
+    <button>Share your thoughts 📌</button>
+
+    <p class="author">
+      Coded by
+      <a href="https://www.linkedin.com/in/selcia-s-405206243/" target="blank"
+        >Selcia</a
+      >
+    </p>
+    <br />
+    <br />
+    <script>
+      function agreeOrNot() {
+        let name = prompt("What is your name?");
+        let agree = prompt(
+          "Do you agree that prayer is important? (Type yes/no)"
+        );
+        agree = agree.toLowerCase().trim();
+        if (agree === "yes") {
+          let greeting =
+            name + ", You are a prayer warrior💪. God bless you!😇";
+          alert(greeting);
+        } else {
+          let greeting =
+            "Don't worry " +
+            name +
+            ", you will soon experience wonderful miracles!💖";
+          alert(greeting);
+        }
+      }
+      let element = document.querySelector("button");
+      element.addEventListener("click", agreeOrNot);
+    </script>
+  </body>
+</html>
